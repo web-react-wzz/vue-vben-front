@@ -12,7 +12,7 @@ defineOptions({
 });
 
 withDefaults(defineProps<Props>(), {
-  companyName: 'Vben Admin',
+  companyName: '',
   companySiteLink: '',
   date: '2024',
   icp: '',
@@ -21,7 +21,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="text-md flex-center">
+  <div class="text-md flex-center text-black">
     <!-- ICP Link -->
     <a
       v-if="icp"
@@ -46,3 +46,9 @@ withDefaults(defineProps<Props>(), {
     </a>
   </div>
 </template>
+<style scoped>
+.text-black {
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+}
+</style>

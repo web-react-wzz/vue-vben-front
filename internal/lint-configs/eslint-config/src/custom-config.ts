@@ -11,6 +11,7 @@ const customConfig: Linter.Config[] = [
   {
     files: ['packages/@core/ui-kit/shadcn-ui/**/**'],
     rules: {
+      'no-console': 'off',
       'vue/require-default-prop': 'off',
     },
   },
@@ -24,6 +25,7 @@ const customConfig: Linter.Config[] = [
     ],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'perfectionist/sort-interfaces': 'off',
       'perfectionist/sort-objects': 'off',
     },
@@ -32,6 +34,7 @@ const customConfig: Linter.Config[] = [
     files: ['**/**.vue'],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'perfectionist/sort-objects': 'off',
     },
   },
@@ -40,6 +43,7 @@ const customConfig: Linter.Config[] = [
     files: ['apps/**/**'],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'no-restricted-imports': [
         'error',
         {
@@ -75,6 +79,7 @@ const customConfig: Linter.Config[] = [
     files: ['packages/@core/**/**'],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'no-restricted-imports': [
         'error',
         {
@@ -94,6 +99,7 @@ const customConfig: Linter.Config[] = [
     files: ['packages/@core/base/**/**'],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'no-restricted-imports': [
         'error',
         {
@@ -123,6 +129,7 @@ const customConfig: Linter.Config[] = [
     ],
     ignores: restrictedImportIgnores,
     rules: {
+      'no-console': 'off',
       'no-restricted-imports': [
         'error',
         {
